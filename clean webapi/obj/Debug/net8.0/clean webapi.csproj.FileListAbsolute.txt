@@ -1,0 +1,44 @@
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\appsettings.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\clean webapi.staticwebassets.endpoints.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\clean webapi.exe
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\clean webapi.deps.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\clean webapi.runtimeconfig.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\clean webapi.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\clean webapi.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.csproj.AssemblyReference.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.AssemblyInfoInputs.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.AssemblyInfo.cs
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.csproj.CoreCompileInputs.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\scopedcss\bundle\clean webapi.styles.css
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean we.2056FFB7.Up2Date
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\refint\clean webapi.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.genruntimeconfig.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\ref\clean webapi.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Application.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Domain.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Persistence.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Application.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Persistence.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Domain.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

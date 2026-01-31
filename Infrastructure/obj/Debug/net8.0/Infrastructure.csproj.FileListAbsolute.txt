@@ -1,0 +1,17 @@
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
