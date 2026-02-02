@@ -15,3 +15,4 @@ C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debu
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\bin\Debug\net8.0\Domain.pdb
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

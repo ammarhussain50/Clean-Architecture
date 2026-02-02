@@ -9,3 +9,4 @@ C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Domain\obj\Debug\net8.0
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\Domain\obj\Debug\net8.0\Domain.sourcelink.json
