@@ -1,4 +1,6 @@
-﻿using Application.Features.Product.Queries;
+﻿using Application.Features.Product.Commands;
+using Application.Features.Product.Queries;
+using Application.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,17 +13,39 @@ namespace clean_webapi.Controllers
     {
         private readonly IMediator _mediator;
 
-        public ProductController(IMediator mediator)
+        public ProductController(IMediator mediator, IApplicationDbContext context)
         {
             _mediator = mediator;
+            
         }
 
         [HttpGet]
-        public async  Task<IActionResult> GetAllProducts()
-        {
+        public async Task<IActionResult> GetProducts()
+        {   
+            var result = await _mediator.Send(new GetAllProductsQuery());
+            return Ok(result);
+        }
 
-            var products = await _mediator.Send( new GetAllProductsQuery());       
-            return Ok(products);
+        [HttpPost("CreateProduct")]
+        public async Task<IActionResult> CreateProduct(CreateProductCommand createProduct, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(createProduct, cancellationToken);
+            return Ok(result);
+        }
+
+
+        [HttpPut("UpdateProduct")]
+        public async Task<IActionResult> UpdateProduct(UpdateProductCommand updateProduct, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(updateProduct, cancellationToken);
+            return Ok(result);
+        }
+
+        [HttpDelete("DeleteProduct/{id}")]
+        public async Task<IActionResult> DeleteProduct(int id, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(new DeleteProductCommand { Id = id}, cancellationToken);
+            return Ok(result);
         }
 
     }
