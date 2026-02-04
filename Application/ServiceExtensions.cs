@@ -13,6 +13,7 @@ namespace Application
         public static void AddApplication(this IServiceCollection services)
         {
             // Add custom service registrations here
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         }
     }

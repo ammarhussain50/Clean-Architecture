@@ -17,6 +17,29 @@
         }
       }
     },
+    "/api/Product/{id}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Product/CreateProduct": {
       "post": {
         "tags": [
@@ -151,7 +174,7 @@
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "remarks": {
             "type": "string",
             "nullable": true
           },

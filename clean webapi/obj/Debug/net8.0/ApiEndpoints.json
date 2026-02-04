@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "clean_webapi.Controllers.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "api/Product/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "clean_webapi.Controllers.ProductController",
     "Method": "CreateProduct",
     "RelativePath": "api/Product/CreateProduct",
     "HttpMethod": "POST",

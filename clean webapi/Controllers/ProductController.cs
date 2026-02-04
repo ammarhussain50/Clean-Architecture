@@ -26,6 +26,13 @@ namespace clean_webapi.Controllers
             return Ok(result);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProductById(int id)
+        {
+            var result = await _mediator.Send(new GetProductByIdQuery { Id = id});
+            return Ok(result);
+        }
+
         [HttpPost("CreateProduct")]
         public async Task<IActionResult> CreateProduct(CreateProductCommand createProduct, CancellationToken cancellationToken)
         {
