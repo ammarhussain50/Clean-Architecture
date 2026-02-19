@@ -83,3 +83,5 @@ C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5ahsjoWZ9XI=",
+  "dgSpecHash": "EYGeUAoBv1c=",
   "success": true,
   "projectFilePath": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\clean webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AMMAR\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\AMMAR\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\AMMAR\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\AMMAR\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\AMMAR\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AMMAR\\.nuget\\packages\\mediatr\\14.0.0\\mediatr.14.0.0.nupkg.sha512",
     "C:\\Users\\AMMAR\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
