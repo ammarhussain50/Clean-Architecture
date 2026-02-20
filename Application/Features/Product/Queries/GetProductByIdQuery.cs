@@ -32,8 +32,14 @@ namespace Application.Features.Product.Queries
             GetProductByIdQuery request,
             CancellationToken cancellationToken)
         {
-            return await _context.Products
+            var result = await _context.Products
                 .Where(x => x.Id == request.Id).FirstOrDefaultAsync();
+
+            if (result == null) { 
+                throw new Exception($"Product with Id {request.Id} not found.");
+            }
+
+            return result;
         }
     }
         

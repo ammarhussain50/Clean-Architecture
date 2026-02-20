@@ -1,4 +1,5 @@
 using Application;
+using clean_webapi.Middlewares;
 using Infrastructure;
 using Persistence;
 
@@ -26,6 +27,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.MapControllers();
 
