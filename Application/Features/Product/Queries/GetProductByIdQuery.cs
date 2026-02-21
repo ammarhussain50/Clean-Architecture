@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions;
+using Application.Interfaces;
+using Application.Wrappers;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,14 +13,14 @@ namespace Application.Features.Product.Queries
 {
    
         public class GetProductByIdQuery 
-        : IRequest<Domain.Entities.Product>
+        : IRequest<ApiResponse<Domain.Entities.Product>>
     {
         public int Id { get; set; }
     }
 
     // 👇 SAME FILE me Handler likh do (abhi ke liye)
     public class GetProductByIdQueryHandler
-        : IRequestHandler<GetProductByIdQuery, Domain.Entities.Product>
+        : IRequestHandler<GetProductByIdQuery, ApiResponse<Domain.Entities.Product>>
     {
         
         private readonly IApplicationDbContext _context;
@@ -28,7 +30,7 @@ namespace Application.Features.Product.Queries
             _context = context;
         }
 
-        public async Task<Domain.Entities.Product> Handle(
+        public async Task<ApiResponse<Domain.Entities.Product>> Handle(
             GetProductByIdQuery request,
             CancellationToken cancellationToken)
         {
@@ -36,10 +38,10 @@ namespace Application.Features.Product.Queries
                 .Where(x => x.Id == request.Id).FirstOrDefaultAsync();
 
             if (result == null) { 
-                throw new Exception($"Product with Id {request.Id} not found.");
+                throw new ApiException($"Product with Id {request.Id} not found.");
             }
 
-            return result;
+            return new ApiResponse<Domain.Entities.Product>(result,"Data fetched succesfully");
         }
     }
         

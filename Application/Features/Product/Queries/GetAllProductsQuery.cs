@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions;
+using Application.Interfaces;
+using Application.Wrappers;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,13 +13,13 @@ namespace Application.Features.Product.Queries
 {
    
         public class GetAllProductsQuery 
-        : IRequest<IEnumerable<Domain.Entities.Product>>
+        : IRequest<ApiResponse<IEnumerable<Domain.Entities.Product>>>
     {
     }
 
     // 👇 SAME FILE me Handler likh do (abhi ke liye)
     public class GetAllProductsQueryHandler
-        : IRequestHandler<GetAllProductsQuery, IEnumerable<Domain.Entities.Product>>
+        : IRequestHandler<GetAllProductsQuery, ApiResponse<IEnumerable<Domain.Entities.Product>>>
     {
         private readonly IApplicationDbContext _context;
 
@@ -26,11 +28,17 @@ namespace Application.Features.Product.Queries
             _context = context;
         }
 
-        public async Task<IEnumerable<Domain.Entities.Product>> Handle(
+        public async Task<ApiResponse<IEnumerable<Domain.Entities.Product>>> Handle(
             GetAllProductsQuery request,
             CancellationToken cancellationToken)
         {
-            return await _context.Products.ToListAsync(cancellationToken);
+            var result = await _context.Products.ToListAsync(cancellationToken);
+            if (result == null)
+            {
+                throw new ApiException($"Product  not found.");
+            }
+
+            return new ApiResponse<IEnumerable<Domain.Entities.Product>>(result, "Data fetched succesfully");
         }
     }
         

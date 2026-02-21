@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions;
+using Application.Interfaces;
+using Application.Wrappers;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Product.Commands
 {
-    public class UpdateProductCommand : IRequest<int>
+    public class UpdateProductCommand : IRequest<ApiResponse<int>>
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -17,7 +19,7 @@ namespace Application.Features.Product.Commands
         public decimal Rate { get; set; }
 
 
-        internal class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, int>
+        internal class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, ApiResponse<int>>
         {
             private readonly IApplicationDbContext _context;
 
@@ -25,19 +27,21 @@ namespace Application.Features.Product.Commands
             {
                 _context = context;
             }
-            public async Task<int> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
+            public async Task<ApiResponse<int>> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
             {
                 var product = await _context.Products.Where(x=> x.Id== request.Id).FirstOrDefaultAsync();
-                if (product != null)
+                if (product == null)
                 {
-                    product.Name = request.Name;
-                    product.Description = request.Description;
-                    product.Rate = request.Rate;
-                    await _context.SaveChangesAsync();
-                    return product.Id;
+                    throw new ApiException("Product not found.");
+
                 }
-                return default;
-               
+                product.Name = request.Name;
+                product.Description = request.Description;
+                product.Rate = request.Rate;
+                await _context.SaveChangesAsync();
+
+                return new ApiResponse<int>(product.Id, "Product updated successfuly.");
+
             }
         }
     }

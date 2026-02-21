@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\middlewares\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\middlewares\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\behaviors\\validationbehaviors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\behaviors\\validationbehaviors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +15,40 @@
       "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\commands\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\queries\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\queries\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\middlewares\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\middlewares\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\wrappers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\wrappers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\exceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\exceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\behaviors\\validationbehaviors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\behaviors\\validationbehaviors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\features\\product\\queries\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\features\\product\\queries\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFFF7F8E-C6AD-450D-96A2-D66232AC85B2}|Domain\\Domain.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,20 +86,97 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ErrorHandlerMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
-              "RelativeDocumentMoniker": "clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
-              "RelativeToolTip": "clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GetProductByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
+              "RelativeToolTip": "Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T20:50:01.391Z",
+              "WhenOpened": "2026-02-04T10:10:23.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetAllProductsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
+              "RelativeToolTip": "Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T19:59:33.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T19:39:06.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T20:06:33.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:30:30.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Application\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\ServiceExtensions.cs",
+              "RelativeToolTip": "Application\\ServiceExtensions.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:59:30.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "clean webapi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "clean webapi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T07:44:15.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ValidationBehaviors.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Behaviors\\ValidationBehaviors.cs",
               "RelativeDocumentMoniker": "Application\\Behaviors\\ValidationBehaviors.cs",
@@ -108,96 +189,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Application\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\ServiceExtensions.cs",
-              "RelativeToolTip": "Application\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T16:59:30.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "clean webapi\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "clean webapi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "Title": "ErrorHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "RelativeToolTip": "clean webapi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T07:44:15.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Program.cs",
-              "RelativeDocumentMoniker": "clean webapi\\Program.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Program.cs",
-              "RelativeToolTip": "clean webapi\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T14:36:03.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetProductByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
-              "RelativeToolTip": "Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACYAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T10:10:23.298Z",
+              "WhenOpened": "2026-02-20T20:50:01.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "DeleteProductCommand.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
-              "RelativeToolTip": "Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
+              "Title": "ApiException.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Exceptions\\ApiException.cs",
+              "RelativeDocumentMoniker": "Application\\Exceptions\\ApiException.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Exceptions\\ApiException.cs",
+              "RelativeToolTip": "Application\\Exceptions\\ApiException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T20:06:33.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateProductCommand.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
-              "RelativeToolTip": "Application\\Features\\Product\\Commands\\CreateProductCommand.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T19:39:06.161Z",
+              "WhenOpened": "2026-02-21T18:31:25.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateProductCommand.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
-              "RelativeToolTip": "Application\\Features\\Product\\Commands\\UpdateProductCommand.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAIBJwCkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Wrappers\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Application\\Wrappers\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Wrappers\\ApiResponse.cs",
+              "RelativeToolTip": "Application\\Wrappers\\ApiResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T19:30:30.005Z"
+              "WhenOpened": "2026-02-21T19:33:28.301Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Application\\Mappings\\MappingProfile.cs",
@@ -209,19 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetAllProductsQuery.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
-              "RelativeToolTip": "Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAIBJwB0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T19:59:33.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\appsettings.json",
               "RelativeDocumentMoniker": "clean webapi\\appsettings.json",
@@ -233,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Domain\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Domain\\Common\\BaseEntity.cs",
@@ -245,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Domain\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
@@ -257,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Persistence\\Context\\ApplicationDbContext.cs",
@@ -269,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "Infrastructure\\ServiceExtensions.cs",

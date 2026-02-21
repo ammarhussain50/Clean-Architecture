@@ -1,23 +1,24 @@
 ﻿using Application.Interfaces;
+using Application.Wrappers;
 using AutoMapper;
+using Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Entities;
 
 namespace Application.Features.Product.Commands
 {
-    public class CreateProductCommand : IRequest<int>
+    public class CreateProductCommand : IRequest<ApiResponse<int>>
     {
         public string Name { get; set; }
         public string remarks { get; set; }
         public decimal Rate { get; set; }
 
 
-        internal class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, int>
+        internal class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, ApiResponse<int>>
         {
             private readonly IMapper _mapper;
 
@@ -28,7 +29,7 @@ namespace Application.Features.Product.Commands
                 _context = context;
                 _mapper = mapper;
             }
-            public async Task<int> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+            public async Task<ApiResponse<int>> Handle(CreateProductCommand request, CancellationToken cancellationToken)
             {
                 var product = _mapper.Map<Domain.Entities.Product>(request);
                 //var product = new Domain.Entities.Product
@@ -39,7 +40,7 @@ namespace Application.Features.Product.Commands
                 //};
                 await _context.Products.AddAsync(product);
                 await _context.SaveChangesAsync();
-                return product.Id;
+                return new ApiResponse<int>(product.Id, "Product created successfuly");
             }
         }
     }
