@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "clean_webapi.Controllers.AccountController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Account/RegisterUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerModel",
+        "Type": "Application.DTOs.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "clean_webapi.Controllers.ProductController",
     "Method": "GetProducts",
     "RelativePath": "api/Product",
