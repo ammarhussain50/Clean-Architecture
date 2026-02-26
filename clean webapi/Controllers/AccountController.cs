@@ -15,6 +15,13 @@ namespace clean_webapi.Controllers
             _accountService = accountService;
         }
 
+        [HttpPost("Authentication")]
+        public async Task<IActionResult> Authentication(AuthenticationRequest registerModel, CancellationToken cancellationToken)
+        {
+            var result = await _accountService.Authenticate(registerModel);
+            return Ok(result);
+        }
+
         [HttpPost("RegisterUser")]
         public async Task<IActionResult> RegisterUser(RegisterRequest registerModel, CancellationToken cancellationToken)
         {

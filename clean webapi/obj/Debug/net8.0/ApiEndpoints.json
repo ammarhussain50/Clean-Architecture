@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "clean_webapi.Controllers.AccountController",
+    "Method": "Authentication",
+    "RelativePath": "api/Account/Authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerModel",
+        "Type": "Application.DTOs.AuthenticationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "clean_webapi.Controllers.AccountController",
     "Method": "RegisterUser",
     "RelativePath": "api/Account/RegisterUser",
     "HttpMethod": "POST",
