@@ -28,83 +28,38 @@ namespace Persistence.SharedServices
         }
 
 
-        //public async Task<ApiResponse<AuthenticationResponse>> Authenticate(AuthenticationRequest request)
-        //{
-        //    var user = await _userManager.FindByEmailAsync(request.Email);
-        //    if (user == null)
-        //    {
-        //        throw new ApiException($"User not registered with this {request.Email}");
-        //    }
-
-        //    var succeeded = await _userManager.CheckPasswordAsync(user, request.Password);
-        //    if (!succeeded)
-        //    {
-        //        throw new ApiException($"Email or password is incorrect");
-        //    }
-
-        //    var jwtSecurity = await GenerateTokenAsync(user);
-        //    var authenticationResponse = new AuthenticationResponse();
-
-        //    authenticationResponse.Id = user.Id;
-        //    authenticationResponse.UserName = user.UserName;
-        //    authenticationResponse.Email = user.Email;
-        //    authenticationResponse.IsVerified = user.EmailConfirmed;
-
-        //    var roles = await _userManager.GetRolesAsync(user);
-        //    authenticationResponse.Roles = roles.ToList();
-
-        //    authenticationResponse.JWToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurity);
-
-        //    return new ApiResponse<AuthenticationResponse>(authenticationResponse, "Authenticated User");
-        //}
-
-
         public async Task<ApiResponse<AuthenticationResponse>> Authenticate(AuthenticationRequest request)
         {
-            try
+            var user = await _userManager.FindByEmailAsync(request.Email);
+            if (user == null)
             {
-                // 🔍 STEP A: Email check
-                var user = await _userManager.FindByEmailAsync(request.Email);
-                if (user == null)
-                {
-                    throw new Exception("USER_NOT_FOUND");
-                }
-
-                // 🔍 STEP B: Password check
-                var passwordOk = await _userManager.CheckPasswordAsync(user, request.Password);
-                if (!passwordOk)
-                {
-                    throw new Exception("PASSWORD_INVALID");
-                }
-
-                // 🔍 STEP C: Roles check
-                var roles = await _userManager.GetRolesAsync(user);
-
-                // 🔍 STEP D: Claims check
-                var claims = await _userManager.GetClaimsAsync(user);
-
-                // 🔍 STEP E: JUST RETURN SIMPLE RESPONSE (NO JWT)
-                return new ApiResponse<AuthenticationResponse>(
-                    new AuthenticationResponse
-                    {
-                        Id = user.Id,
-                        Email = user.Email,
-                        UserName = user.UserName,
-                        Roles = roles.ToList(),
-                        IsVerified = user.EmailConfirmed,
-                        JWToken = "TEST_OK"
-                    },
-                    "STEP-BY-STEP AUTH OK"
-                );
+                throw new ApiException($"User not registered with this {request.Email}");
             }
-            catch (Exception ex)
+
+            var succeeded = await _userManager.CheckPasswordAsync(user, request.Password);
+            if (!succeeded)
             {
-                // 🔥 REAL ERROR WILL SHOW IN SWAGGER
-                throw new ApiException(
-                    $"AUTH ERROR ❌ | {ex.Message} | INNER: {ex.InnerException?.Message}"
-                );
+                throw new ApiException($"Email or password is incorrect");
             }
+
+            var jwtSecurity = await GenerateTokenAsync(user);
+            var authenticationResponse = new AuthenticationResponse();
+
+            authenticationResponse.Id = user.Id;
+            authenticationResponse.UserName = user.UserName;
+            authenticationResponse.Email = user.Email;
+            authenticationResponse.IsVerified = user.EmailConfirmed;
+
+            var roles = await _userManager.GetRolesAsync(user);
+            authenticationResponse.Roles = roles.ToList();
+
+            authenticationResponse.JWToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurity);
+
+            return new ApiResponse<AuthenticationResponse>(authenticationResponse, "Authenticated User");
         }
+
+
+        
 
 
         private async Task<JwtSecurityToken> GenerateTokenAsync(ApplicationUser user)
@@ -140,11 +95,6 @@ namespace Persistence.SharedServices
                 claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["JwtSettings:DurationInMinutes"])),
                 signingCredentials: signingCredentials);
-            var jwtKey = _configuration["JwtSettings:Key"];
-            if (string.IsNullOrEmpty(jwtKey))
-            {
-                throw new Exception("JWT Key is missing from configuration.");
-            }
             return jwtSecurityToken;
         }
 

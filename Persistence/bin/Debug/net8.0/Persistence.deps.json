@@ -9,10 +9,13 @@
       "Persistence/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.36",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Design": "6.0.36",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
+          "Microsoft.IdentityModel.Tokens": "8.14.0",
+          "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
         "runtime": {
           "Persistence.dll": {}
@@ -91,23 +94,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/6.0.36": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.36": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.36.0"
+        },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
-            "assemblyVersion": "6.0.0.0",
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "6.0.36.0",
             "fileVersion": "6.0.3624.51604"
           }
         }
       },
+      "Microsoft.AspNetCore.Cryptography.Internal/6.0.36": {},
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/6.0.36": {
         "dependencies": {
           "Microsoft.AspNetCore.Cryptography.Internal": "6.0.36"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51604"
-          }
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.36": {
@@ -249,12 +250,6 @@
       "Microsoft.Extensions.Caching.Abstractions/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.1"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
         }
       },
       "Microsoft.Extensions.Caching.Memory/6.0.3": {
@@ -264,34 +259,16 @@
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.Extensions.Options": "6.0.1",
           "Microsoft.Extensions.Primitives": "6.0.1"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.1"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.2": {
@@ -307,12 +284,6 @@
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "6.0.36",
           "Microsoft.Extensions.Logging": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Identity.Core.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51604"
-          }
         }
       },
       "Microsoft.Extensions.Identity.Stores/6.0.36": {
@@ -320,12 +291,6 @@
           "Microsoft.Extensions.Caching.Abstractions": "6.0.1",
           "Microsoft.Extensions.Identity.Core": "6.0.36",
           "Microsoft.Extensions.Logging": "6.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Identity.Stores.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51604"
-          }
         }
       },
       "Microsoft.Extensions.Logging/6.0.1": {
@@ -335,12 +300,6 @@
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.Extensions.Options": "6.0.1",
           "System.Diagnostics.DiagnosticSource": "10.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/10.0.0": {
@@ -359,22 +318,9 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
           "Microsoft.Extensions.Primitives": "6.0.1"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
         }
       },
-      "Microsoft.Extensions.Primitives/6.0.1": {
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.3624.51421"
-          }
-        }
-      },
+      "Microsoft.Extensions.Primitives/6.0.1": {},
       "Microsoft.Identity.Client/4.21.1": {
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
@@ -428,7 +374,7 @@
       "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.36.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "6.36.0",
-          "System.IdentityModel.Tokens.Jwt": "6.36.0"
+          "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
@@ -522,15 +468,15 @@
           }
         }
       },
-      "System.IdentityModel.Tokens.Jwt/6.36.0": {
+      "System.IdentityModel.Tokens.Jwt/8.14.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.14.0",
           "Microsoft.IdentityModel.Tokens": "8.14.0"
         },
         "runtime": {
-          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "assemblyVersion": "6.36.0.0",
-            "fileVersion": "6.36.0.50718"
+          "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "8.14.0.0",
+            "fileVersion": "8.14.0.60815"
           }
         }
       },
@@ -694,6 +640,13 @@
       "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
       "path": "mediatr.contracts/2.0.1",
       "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vGDqvZUehbtKdoUzVO32N0Lxon+1piGO6qFnA8FNXEzWhrLN5uum8ZyhWgrWYSA4b6JuCBJ/wAC7rV38wBvLew==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.36",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.6.0.36.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.36": {
       "type": "package",
@@ -954,12 +907,12 @@
       "path": "system.drawing.common/4.7.3",
       "hashPath": "system.drawing.common.4.7.3.nupkg.sha512"
     },
-    "System.IdentityModel.Tokens.Jwt/6.36.0": {
+    "System.IdentityModel.Tokens.Jwt/8.14.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8RKI7qlT6yuEFBId/Ne2VDfa0bh5aUKJLHRV0YuSnYEtnMNJTrbUJyyXwtqEhV9Ykk2bV997QKBFi3Ni8P+wAw==",
-      "path": "system.identitymodel.tokens.jwt/6.36.0",
-      "hashPath": "system.identitymodel.tokens.jwt.6.36.0.nupkg.sha512"
+      "sha512": "sha512-EYGgN/S+HK7S6F3GaaPLFAfK0UzMrkXFyWCvXpQWFYmZln3dqtbyIO7VuTM/iIIPMzkelg8ZLlBPvMhxj6nOAA==",
+      "path": "system.identitymodel.tokens.jwt/8.14.0",
+      "hashPath": "system.identitymodel.tokens.jwt.8.14.0.nupkg.sha512"
     },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",
