@@ -23,11 +23,13 @@ namespace Application.Features.Product.Commands
             private readonly IMapper _mapper;
 
             private readonly IApplicationDbContext _context;
+            private readonly IAuthenticatedUser _authenticatedUser;
 
-            public CreateProductCommandHandler(IApplicationDbContext context, IMapper mapper)
+            public CreateProductCommandHandler(IApplicationDbContext context, IMapper mapper, IAuthenticatedUser authenticatedUser)
             {
                 _context = context;
                 _mapper = mapper;
+                _authenticatedUser = authenticatedUser;
             }
             public async Task<ApiResponse<int>> Handle(CreateProductCommand request, CancellationToken cancellationToken)
             {
@@ -38,6 +40,8 @@ namespace Application.Features.Product.Commands
                 //    Description = request.Description,
                 //    Rate = request.Rate
                 //};
+                product.CreatedBy = _authenticatedUser.UserId;
+                product.CreatedOn = DateTime.Now;
                 await _context.Products.AddAsync(product);
                 await _context.SaveChangesAsync();
                 return new ApiResponse<int>(product.Id, "Product created successfuly");

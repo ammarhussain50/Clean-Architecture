@@ -22,10 +22,12 @@ namespace Application.Features.Product.Commands
         internal class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, ApiResponse<int>>
         {
             private readonly IApplicationDbContext _context;
+            private readonly IAuthenticatedUser _authenticatedUser;
 
-            public UpdateProductCommandHandler(IApplicationDbContext context)
+            public UpdateProductCommandHandler(IApplicationDbContext context, IAuthenticatedUser authenticatedUser = null)
             {
                 _context = context;
+                _authenticatedUser = authenticatedUser;
             }
             public async Task<ApiResponse<int>> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
             {
@@ -38,6 +40,8 @@ namespace Application.Features.Product.Commands
                 product.Name = request.Name;
                 product.Description = request.Description;
                 product.Rate = request.Rate;
+                product.ModifiedBy = _authenticatedUser.UserId;
+                product.ModifiedOn = DateTime.Now;
                 await _context.SaveChangesAsync();
 
                 return new ApiResponse<int>(product.Id, "Product updated successfuly.");

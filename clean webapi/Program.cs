@@ -1,5 +1,7 @@
 using Application;
+using Application.Interfaces;
 using clean_webapi.Middlewares;
+using clean_webapi.SharedServices;
 using Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -18,6 +20,8 @@ builder.Services.AddSwaggerExtention();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddScoped<IAuthenticatedUser, AuthenticatedUser>();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddAuthentication(options =>
 {
