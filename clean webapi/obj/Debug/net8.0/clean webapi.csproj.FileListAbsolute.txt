@@ -87,3 +87,8 @@ C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\clean webapi.genruntimeconfig.cache
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\obj\Debug\net8.0\ref\clean webapi.dll
 C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\MailKit.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\MimeKit.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\AMMAR\OneDrive\Desktop\clean architecture\clean\clean webapi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

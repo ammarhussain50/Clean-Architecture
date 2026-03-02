@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Application.Interfaces;
+using Infrastructure.Services;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,7 @@ namespace Infrastructure
         public static void AddInfrastructure(this IServiceCollection services)
         {
             // Add custom service registrations here
+            services.AddTransient<IEmailService, EmailService>();
         }
     }
 }

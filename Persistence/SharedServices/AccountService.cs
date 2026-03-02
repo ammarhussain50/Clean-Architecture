@@ -21,10 +21,12 @@ namespace Persistence.SharedServices
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
-        public AccountService(UserManager<ApplicationUser> userManager,IConfiguration configuration)
+        private readonly IEmailService _emailService;
+        public AccountService(UserManager<ApplicationUser> userManager, IConfiguration configuration, IEmailService emailService = null)
         {
             _userManager = userManager;
             _configuration = configuration;
+            _emailService = emailService;
         }
 
 
@@ -123,6 +125,20 @@ namespace Persistence.SharedServices
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(userModel, Roles.Basic.ToString());
+                var emailRequest = new EmailRequest()
+                {
+                    To = userModel.Email,
+                    Body = "hello welcome",
+                    Subject = $"Welcome {userModel.Email} to shawn",
+                    IsHtmlBody = false,
+                };
+
+
+                //emailRequest.Body = "User Register successfuly";
+                emailRequest.Body = $"<h1>Welcome {userModel.FirstName} {userModel.LastName} to shawn</h1><p>Your account has been created successfully.</p>";
+                await _emailService.SendAsync(emailRequest);
+
+                
                 return new ApiResponse<Guid>(userModel.Id, "User Register successfuly");
             }
             else
