@@ -6,6 +6,7 @@ using Persistence.Context;
 using Persistence.IdentityModels;
 using Persistence.Seeds;
 using Persistence.SharedServices;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,11 @@ namespace Persistence
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDataProtection();
             services.AddIdentityCore<ApplicationUser>()
                 .AddRoles<ApplicationRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\persistence\\sharedservices\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\sharedservices\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\persistence\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFCBAB8B-6D68-482F-A37B-B48D422BF780}|Infrastructure\\Infrastructure.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\dtos\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|solutionrelative:application\\dtos\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFCBAB8B-6D68-482F-A37B-B48D422BF780}|Infrastructure\\Infrastructure.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\infrastructure\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFCBAB8B-6D68-482F-A37B-B48D422BF780}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\persistence\\seeds\\defaultusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\seeds\\defaultusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|solutionrelative:clean webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F2AB968-BFDE-42AF-A611-BA888E1684F7}|clean webapi\\clean webapi.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\clean webapi\\sharedservices\\authenticateduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\persistence\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\persistence\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F092E987-D9DE-40D7-99AE-60E08AB37FE4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CC3B6AF-7879-47D5-9622-5AF20C7E83F1}|Application\\Application.csproj|c:\\users\\ammar\\onedrive\\desktop\\clean architecture\\clean\\application\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,20 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\Services\\EmailService.cs",
-              "RelativeToolTip": "Infrastructure\\Services\\EmailService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T20:44:03.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "EmailRequest.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\DTOs\\EmailRequest.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\EmailRequest.cs",
@@ -147,38 +130,24 @@
               "RelativeToolTip": "Application\\DTOs\\EmailRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:48:07.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T19:48:07.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\ServiceExtensions.cs",
-              "RelativeToolTip": "Infrastructure\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T14:40:10.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\SharedServices\\AccountService.cs",
               "RelativeDocumentMoniker": "Persistence\\SharedServices\\AccountService.cs",
               "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\SharedServices\\AccountService.cs",
               "RelativeToolTip": "Persistence\\SharedServices\\AccountService.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAANIAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T22:11:31.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "clean webapi\\Controllers\\AccountController.cs",
@@ -186,25 +155,24 @@
               "RelativeToolTip": "clean webapi\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAIBJwBIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T20:50:15.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T20:50:15.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "clean webapi\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\appsettings.Development.json",
               "RelativeToolTip": "clean webapi\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-02-26T20:48:36.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DefaultUsers.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\Seeds\\DefaultUsers.cs",
               "RelativeDocumentMoniker": "Persistence\\Seeds\\DefaultUsers.cs",
@@ -212,25 +180,49 @@
               "RelativeToolTip": "Persistence\\Seeds\\DefaultUsers.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAABQwCIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T20:14:31.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T20:14:31.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Program.cs",
               "RelativeDocumentMoniker": "clean webapi\\Program.cs",
               "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Program.cs",
               "RelativeToolTip": "clean webapi\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBYAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-28T20:12:05.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Persistence\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\ServiceExtensions.cs",
+              "RelativeToolTip": "Persistence\\ServiceExtensions.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T21:42:18.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Infrastructure\\Services\\EmailService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\EmailService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T20:44:03.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AddServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\clean webapi\\Services\\AddServiceExtensions.cs",
               "RelativeDocumentMoniker": "clean webapi\\Services\\AddServiceExtensions.cs",
@@ -238,8 +230,7 @@
               "RelativeToolTip": "clean webapi\\Services\\AddServiceExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T20:40:25.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T20:40:25.541Z"
             },
             {
               "$type": "Document",
@@ -251,8 +242,7 @@
               "RelativeToolTip": "clean webapi\\SharedServices\\AuthenticatedUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:08:54.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-01T20:08:54.948Z"
             },
             {
               "$type": "Document",
@@ -264,8 +254,7 @@
               "RelativeToolTip": "Domain\\Common\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T19:13:42.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T19:13:42.888Z"
             },
             {
               "$type": "Document",
@@ -277,8 +266,7 @@
               "RelativeToolTip": "clean webapi\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T20:25:37.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T20:25:37.162Z"
             },
             {
               "$type": "Document",
@@ -290,8 +278,7 @@
               "RelativeToolTip": "Persistence\\Seeds\\DefaultRoles.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAIBZwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T19:10:11.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T19:10:11.473Z"
             },
             {
               "$type": "Document",
@@ -303,12 +290,11 @@
               "RelativeToolTip": "Persistence\\Persistence.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-28T18:51:15.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T18:51:15.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "ApplicationRole.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\IdentityModels\\ApplicationRole.cs",
               "RelativeDocumentMoniker": "Persistence\\IdentityModels\\ApplicationRole.cs",
@@ -316,12 +302,11 @@
               "RelativeToolTip": "Persistence\\IdentityModels\\ApplicationRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T21:31:04.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T21:31:04.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Enums\\Roles.cs",
               "RelativeDocumentMoniker": "Application\\Enums\\Roles.cs",
@@ -329,25 +314,11 @@
               "RelativeToolTip": "Application\\Enums\\Roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T19:17:11.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T19:17:11.932Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Persistence\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\ServiceExtensions.cs",
-              "RelativeToolTip": "Persistence\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAACBjwBgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T21:42:18.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\DTOs\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\RegisterRequest.cs",
@@ -355,12 +326,11 @@
               "RelativeToolTip": "Application\\DTOs\\RegisterRequest.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAiwCIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T22:18:46.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T22:18:46.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\IdentityModels\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Persistence\\IdentityModels\\ApplicationUser.cs",
@@ -368,12 +338,11 @@
               "RelativeToolTip": "Persistence\\IdentityModels\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T21:04:42.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T21:04:42.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "DeleteProductCommand.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
@@ -381,12 +350,11 @@
               "RelativeToolTip": "Application\\Features\\Product\\Commands\\DeleteProductCommand.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAUwBYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T20:06:33.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T20:06:33.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Persistence\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Persistence\\Context\\ApplicationDbContext.cs",
@@ -394,12 +362,11 @@
               "RelativeToolTip": "Persistence\\Context\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T19:44:39.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T19:44:39.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "ValidationErrorException.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Exceptions\\ValidationErrorException.cs",
               "RelativeDocumentMoniker": "Application\\Exceptions\\ValidationErrorException.cs",
@@ -412,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "GetAllProductsQuery.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
@@ -420,12 +387,11 @@
               "RelativeToolTip": "Application\\Features\\Product\\Queries\\GetAllProductsQuery.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T19:59:33.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T19:59:33.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "GetProductByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
@@ -433,12 +399,11 @@
               "RelativeToolTip": "Application\\Features\\Product\\Queries\\GetProductByIdQuery.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAiwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T10:10:23.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T10:10:23.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "ApiException.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Exceptions\\ApiException.cs",
               "RelativeDocumentMoniker": "Application\\Exceptions\\ApiException.cs",
@@ -446,12 +411,11 @@
               "RelativeToolTip": "Application\\Exceptions\\ApiException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T18:31:25.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T18:31:25.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Application\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Application\\Mappings\\MappingProfile.cs",
@@ -459,12 +423,11 @@
               "RelativeToolTip": "Application\\Mappings\\MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T17:01:53.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T17:01:53.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\AMMAR\\OneDrive\\Desktop\\clean architecture\\clean\\Domain\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
@@ -472,8 +435,7 @@
               "RelativeToolTip": "Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T19:19:33.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T19:19:33.392Z"
             }
           ]
         }

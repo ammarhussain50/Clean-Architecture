@@ -4,6 +4,7 @@ using Application.Exceptions;
 using Application.Interfaces;
 using Application.Wrappers;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Persistence.IdentityModels;
@@ -117,7 +118,7 @@ namespace Persistence.SharedServices
             userModel.FirstName = registerRequest.FirstName;
             userModel.LastName = registerRequest.LastName;
             userModel.Gender = registerRequest.Gender;
-            userModel.EmailConfirmed = true;
+            //userModel.EmailConfirmed = true;
             userModel.PhoneNumberConfirmed = true;
 
             var result = await _userManager.CreateAsync(userModel, registerRequest.Password);
@@ -125,21 +126,89 @@ namespace Persistence.SharedServices
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(userModel, Roles.Basic.ToString());
-                var emailRequest = new EmailRequest()
-                {
-                    To = userModel.Email,
-                    Body = "hello welcome",
-                    Subject = $"Welcome {userModel.Email} to shawn",
-                    IsHtmlBody = false,
-                };
 
 
-                //emailRequest.Body = "User Register successfuly";
-                emailRequest.Body = $"<h1>Welcome {userModel.FirstName} {userModel.LastName} to shawn</h1><p>Your account has been created successfully.</p>";
-                await _emailService.SendAsync(emailRequest);
+                string emailTemplate = @"<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Welcome Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .content {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #FF0000;
+            color: #ffffff;
+            padding: 12px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <div class=""header"">Welcome [UserName]</div>
+        <div class=""content"">
+            Thank you for joining us. We are excited to have you on board. Click the button below to subscribe to my channel!
+        </div>
+        <a href=""https://www.youtube.com/@CodeWithHanif"" target=""_blank"" class=""button"">Subscribe Now</a>
+        <div class=""footer"">
+            If you have any questions, feel free to contact us at <a href=""https://www.linkedin.com/in/muhammad-hanif-shahzad-a49409214"" target=""_blank"">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
+";
 
-                
-                return new ApiResponse<Guid>(userModel.Id, "User Register successfuly");
+
+                //var emailRequest = new EmailRequest()
+                //{
+                //    To = userModel.Email,
+                //    Body = emailTemplate.Replace("[UserName]", userModel.Email),
+                //    Subject = $"Welcome {userModel.Email} to shawn",
+                //    IsHtmlBody = true,
+                //};
+
+
+                ////emailRequest.Body = "User Register successfuly";
+                //emailRequest.Body = $"<h1>Welcome {userModel.FirstName} {userModel.LastName} to shawn</h1><p>Your account has been created successfully.</p>";
+                //await _emailService.SendAsync(emailRequest);
+                await SendConfirmationEmailAsync(userModel);
+
+
+                return new ApiResponse<Guid>(userModel.Id, "Verfication email has been send to your account");
             }
             else
             {
@@ -148,6 +217,45 @@ namespace Persistence.SharedServices
             }
 
 
+        }
+
+        private async Task SendConfirmationEmailAsync(ApplicationUser userModel)
+        {
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(userModel);
+
+            token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
+
+            string verificationUrl = $"{_configuration["ClientUrl"]}/api/account/confirm-email?userId={userModel.Id}&token={token}";
+
+            var emailRequest = new EmailRequest()
+            {
+                To = userModel.Email,
+                Body = $"<p>Please verify your account by click on this link: {verificationUrl} </p> <br> <p>If this email is not realted to you please ignore it.</p>",
+                Subject = $"Confirm your email {userModel.Email} to CodeWithHanif",
+                IsHtmlBody = true,
+            };
+
+            await _emailService.SendAsync(emailRequest);
+        }
+
+        public async Task<ApiResponse<bool>> ConfirmEmail(string userId, string token)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                throw new ApiException($"User not found with this {userId}");
+            }
+
+            token = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(token));
+            var result = await _userManager.ConfirmEmailAsync(user, token);
+            if (result.Succeeded)
+            {
+                return new ApiResponse<bool>(true, "Email confirmed successfully");
+            }
+            else
+            {
+                throw new ApiException(result.Errors.ToString());
+            }
         }
     }
 }
