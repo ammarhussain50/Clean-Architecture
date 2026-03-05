@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "clean_webapi.Controllers.AccountController",
+    "ContainingType": "WebApi.Controllers.AccountController",
     "Method": "Authentication",
     "RelativePath": "api/Account/Authentication",
     "HttpMethod": "POST",
@@ -16,7 +16,44 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "clean_webapi.Controllers.AccountController",
+    "ContainingType": "WebApi.Controllers.AccountController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Account/confirm-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AccountController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Account/forgot-password",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AccountController",
     "Method": "RegisterUser",
     "RelativePath": "api/Account/RegisterUser",
     "HttpMethod": "POST",
@@ -26,6 +63,38 @@
       {
         "Name": "registerModel",
         "Type": "Application.DTOs.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AccountController",
+    "Method": "ResendConfirmEmail",
+    "RelativePath": "api/Account/resend-confirm-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Account/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPassword",
+        "Type": "Application.DTOs.ResetPasswordRequest",
         "IsRequired": true
       }
     ],

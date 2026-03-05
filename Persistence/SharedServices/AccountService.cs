@@ -16,20 +16,19 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistence.SharedServices
+namespace Persistance.SharedServices
 {
     public class AccountService : IAccountService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
         private readonly IEmailService _emailService;
-        public AccountService(UserManager<ApplicationUser> userManager, IConfiguration configuration, IEmailService emailService = null)
+        public AccountService(UserManager<ApplicationUser> userManager, IConfiguration configuration, IEmailService emailService)
         {
             _userManager = userManager;
             _configuration = configuration;
             _emailService = emailService;
         }
-
 
         public async Task<ApiResponse<AuthenticationResponse>> Authenticate(AuthenticationRequest request)
         {
@@ -37,6 +36,11 @@ namespace Persistence.SharedServices
             if (user == null)
             {
                 throw new ApiException($"User not registered with this {request.Email}");
+            }
+
+            if (!user.EmailConfirmed)
+            {
+                throw new ApiException($"Email not confirmed, pls confirm your email to login");
             }
 
             var succeeded = await _userManager.CheckPasswordAsync(user, request.Password);
@@ -60,10 +64,6 @@ namespace Persistence.SharedServices
 
             return new ApiResponse<AuthenticationResponse>(authenticationResponse, "Authenticated User");
         }
-
-
-        
-
 
         private async Task<JwtSecurityToken> GenerateTokenAsync(ApplicationUser user)
         {
@@ -101,8 +101,6 @@ namespace Persistence.SharedServices
             return jwtSecurityToken;
         }
 
-
-
         public async Task<ApiResponse<Guid>> RegisterUser(RegisterRequest registerRequest)
         {
             var user = await _userManager.FindByEmailAsync(registerRequest.Email);
@@ -118,7 +116,6 @@ namespace Persistence.SharedServices
             userModel.FirstName = registerRequest.FirstName;
             userModel.LastName = registerRequest.LastName;
             userModel.Gender = registerRequest.Gender;
-            //userModel.EmailConfirmed = true;
             userModel.PhoneNumberConfirmed = true;
 
             var result = await _userManager.CreateAsync(userModel, registerRequest.Password);
@@ -192,28 +189,23 @@ namespace Persistence.SharedServices
 </html>
 ";
 
-
                 //var emailRequest = new EmailRequest()
                 //{
                 //    To = userModel.Email,
                 //    Body = emailTemplate.Replace("[UserName]", userModel.Email),
-                //    Subject = $"Welcome {userModel.Email} to shawn",
+                //    Subject = $"Welcome {userModel.Email} to CodeWithHanif",
                 //    IsHtmlBody = true,
                 //};
 
-
-                ////emailRequest.Body = "User Register successfuly";
-                //emailRequest.Body = $"<h1>Welcome {userModel.FirstName} {userModel.LastName} to shawn</h1><p>Your account has been created successfully.</p>";
                 //await _emailService.SendAsync(emailRequest);
+
                 await SendConfirmationEmailAsync(userModel);
 
-
-                return new ApiResponse<Guid>(userModel.Id, "Verfication email has been send to your account");
+                return new ApiResponse<Guid>(userModel.Id, "Verification email has been sent to your account, pls verify your account.");
             }
             else
             {
-                var errors = string.Join("; ", result.Errors.Select(e => e.Description));
-                throw new ApiException(errors);
+                throw new ApiException(result.Errors.ToString());
             }
 
 
@@ -251,6 +243,71 @@ namespace Persistence.SharedServices
             if (result.Succeeded)
             {
                 return new ApiResponse<bool>(true, "Email confirmed successfully");
+            }
+            else
+            {
+                throw new ApiException(result.Errors.ToString());
+            }
+        }
+
+        public async Task<ApiResponse<bool>> ResendConfirmationEmailAsync(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                throw new ApiException($"User not found with this {email}");
+            }
+
+            if (user.EmailConfirmed)
+            {
+                throw new ApiException($"Email already confirmed");
+            }
+
+            await SendConfirmationEmailAsync(user);
+            return new ApiResponse<bool>(true, "Verification email has been sent to your account, pls verify your account.");
+        }
+
+        public async Task<ApiResponse<bool>> ForgotPasswordAsync(string userEmail)
+        {
+            var user = await _userManager.FindByEmailAsync(userEmail);
+            if (user == null)
+            {
+                throw new ApiException($"User not found with this {userEmail}");
+            }
+
+            string token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
+
+            string resetPasswordLink = $"{_configuration["ClientUrl"]}/api/account/reset-password?email={userEmail}&token={token}";
+
+            var emailRequest = new EmailRequest()
+            {
+                To = userEmail,
+                Body = $"<p>To reset your password click on this link: <a href='{resetPasswordLink}'>Click here to reset password</a> </p>",
+                Subject = $"Reset password",
+                IsHtmlBody = true,
+            };
+
+            await _emailService.SendAsync(emailRequest);
+            return new ApiResponse<bool>(true, "Reset password link has been sent to your account, pls check your email.");
+        }
+
+        public async Task<ApiResponse<bool>> ResetPasswordAsync(ResetPasswordRequest resetPassword)
+        {
+            var user = await _userManager.FindByEmailAsync(resetPassword.Email);
+            if (user == null)
+            {
+                throw new ApiException($"User not found with this {resetPassword.Email}");
+            }
+
+            var token = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(resetPassword.Token));
+
+            var result = await _userManager.ResetPasswordAsync(user, token, resetPassword.NewPassword);
+
+            if (result.Succeeded)
+            {
+                return new ApiResponse<bool>(true, "Password reset successfully");
             }
             else
             {

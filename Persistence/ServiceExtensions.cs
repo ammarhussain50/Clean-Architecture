@@ -5,13 +5,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Persistence.Context;
 using Persistence.IdentityModels;
 using Persistence.Seeds;
-using Persistence.SharedServices;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Persistance.SharedServices;
 
 namespace Persistence
 {
@@ -28,6 +28,11 @@ namespace Persistence
                 .AddRoles<ApplicationRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromMinutes(30);
+            });
 
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 

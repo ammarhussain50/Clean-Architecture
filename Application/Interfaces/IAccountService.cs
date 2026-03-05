@@ -12,6 +12,9 @@ namespace Application.Interfaces
     {
         Task<ApiResponse<AuthenticationResponse>> Authenticate(AuthenticationRequest request);
         Task<ApiResponse<Guid>> RegisterUser(RegisterRequest registerRequest);
-
+        Task<ApiResponse<bool>> ConfirmEmail(string userId, string token);
+        Task<ApiResponse<bool>> ResendConfirmationEmailAsync(string email);
+        Task<ApiResponse<bool>> ForgotPasswordAsync(string userEmail);
+        Task<ApiResponse<bool>> ResetPasswordAsync(ResetPasswordRequest resetPassword);
     }
 }
